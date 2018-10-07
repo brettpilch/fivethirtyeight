@@ -82,7 +82,7 @@ def main():
         racks_from_moves[move].append(rack)
 
     print("max moves: {}".format(max_moves))
-    print("one of the worst racks: {}".format(random.choice(racks_from_moves[6])))
+    print("one of the worst racks: {}".format(random.choice(racks_from_moves[max_moves])))
     print("mean moves: {}".format(mean_moves))
 
     for moves in sorted(racks_from_moves.keys()):
